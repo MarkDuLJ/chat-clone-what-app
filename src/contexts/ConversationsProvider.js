@@ -30,9 +30,9 @@ export function ConversationsProvider({ id, children }) {
         let madeChange = false;
         const newMessage = { sender, text };
         const newConversations = prevConversations.map((conversation) => {
-          console.log("CON", conversation.recipients);
-          console.log("INPUT", recipients);
-          console.log(arrayEquality(conversation.recipients, recipients));
+          // console.log("CON", conversation.recipients);
+          // console.log("INPUT", recipients);
+          // console.log(arrayEquality(conversation.recipients, recipients));
           if (arrayEquality(conversation.recipients, recipients)) {
             madeChange = true;
             return {
